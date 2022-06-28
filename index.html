@@ -1,40 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="asset/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
     <title>CodePen</title>
 </head>
 <body>
-
     <header>
-        <h1>Editor HTML & CSS</h1>
+        <h1 class="titre">Editor HTML & CSS</h1>
     </header>
-    <div>
-        <button id="b">b</button>
-        <button id="it">I</button>
-    </div>
+    <div class="container">
+        <nav>
+            <div>
+                <button class="btn btn-outline-secondary" id="bold">B</button>
+                <button class="btn btn-outline-secondary" id="ita">i</button>
+                <button class="btn btn-outline-secondary" id="col">color</button>
+                <button class="btn btn-outline-secondary" id="para">p</button>
+                <button class="btn btn-outline-secondary" id="select">span</button>
+            </div>
+        </nav>
+        <div class="container box">
+            <div class="row col-12">
+                <div class="html col-4">
+                    <label for="html" class="form-label">html</label>
+                    <textarea id="html" rows="10" class="form-control"></textarea>
+                </div>
+                <div class="css col-4">
+                    <label for="css" class="form-label">CSS</label>
+                    <textarea id="css" rows="10" class="form-control"></textarea>
+                </div>
+                <div class="js col-4">
+                    <label for="js" class="form-label">JS</label>
+                    <textarea id="js" rows="10" class="form-control"></textarea>
+                </div>
+            </div>
+            <div id="progress">
+                <div id="progress_bar"></div>
+                <div id="char_count">200</div>
+            </div>
 
-    <div class="text">
-        <textarea name="text" id="text" cols="30" rows="10" placeholder="Hello Word ..." onkeyup="compte(this, '#compter')"></textarea>
-        <div id="progress">
-            <div id="progressBar"></div>
+            <div>
+                <div class="live_title"> 
+                    <h3>Live Coding </h3><img id="img" src="asset/img/giphy.webp" alt="load"></div>
+                </div>
+
+                <div id="live">
+                    <style id="styl"></style>
+                </div>
+            </div>
         </div>
-
-        <p id="compter">200</p>
     </div>
-
-    <div class="editing">
-        <h1>Live_Coding</h1>
-    </div>
-
-    <div>
-        <div name="irl" id="irl"></div>
-    </div>
-
-
-<script src="assets/js/index.js"></script>    
+<script src="asset/js/main.js"></script>
 </body>
 </html>

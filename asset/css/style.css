@@ -1,33 +1,67 @@
-h1 {
-    color: #000000;
-    font-size: 20px;  
+body {
+    margin: 0%;
+    padding: 0%;
 }
 
-.btn {
-    background-color: lightslategray;
-    color: white;
-    border-radius: 5px;
+header {
+}
+
+.titre {
+    color: #000000;
+    font-size: 28px;
+    text-align: center;
+    
+}
+
+.titre{
+    margin-top: 20px;
+}
+
+nav{
+    margin-top: 30px;
     margin-bottom: 30px;
 }
 
-textarea {
-    margin-top: 5px;
-    width: 100%;
-    min-height: 200px;
+.button {
+    padding: 10px;
+}
+
+.container .box{
+    margin: 0%;
+    padding: 0%;
 }
 
 #progress {
     width: 100%;
-    margin-top: 10px;
+    margin-top: 0px;
 }
   
 #progress_bar {
     width: 0.5%;
     height: 10px;
+    margin-top: 10px;
     background-color: #4a707a;
     transition: 0.5s ease;
 }
-#compter {
-    text-align: right;
+
+#char_count {
+    text-align: end;
 }
 
+#live {
+    overflow: hidden;
+    width: 100%;
+}
+
+.live_title{
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    margin-left: 20px;
+    margin-top: 4px;
+    width: 30px;
+    height: 30px;
+    visibility: hidden;
+}
